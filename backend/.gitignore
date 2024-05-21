@@ -1,0 +1,55 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.development
+.env.test
+.env.production
+.env.local
+.env.*.local
+build
+out
+.next
+.cache
+.nuxt
+dist
+tmp
+temp
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Bower dependency directory
+bower_components/
+
+# Snowpack dependency directory
+web_modules/
+
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
