@@ -1,0 +1,65 @@
+.card {
+  position: relative;
+  width: 32%; /* Approximately one-third of the container */
+  transition: transform 0.9s, box-shadow 0.3s;
+  border: 3px solid #000; /* Add black border */
+  overflow: hidden; /* Ensure the content stays within the card */
+  margin-bottom: 1rem; /* Add space between rows */
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.cardImgTop {
+  width: 100%;
+  height: auto;
+  transition: transform 0.9s;
+}
+
+.cardBody {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  
+  visibility: hidden; /* Hide by default */
+  opacity: 0;
+  transition: visibility 0.6s, opacity 0.6s;
+}
+
+.card:hover .cardBody {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cardButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  visibility: visible; /* Ensure the button is always visible */
+  transition: background-color 0.3s;
+}
+
+.cardButton:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .card {
+    width: 48%; /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* One card per row on small screens */
+  }
+}

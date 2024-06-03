@@ -1,0 +1,47 @@
+.navbar {
+  background-color: #fff; /* White background */
+  padding: 1rem 2rem; /* Add padding for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbarBrand {
+  color: #000; /* Black text */
+  font-weight: bold; /* Bold text for brand */
+}
+
+.navbar-nav .nav-link, .offcanvas-title {
+  color: #000; /* Black text */
+  margin-right: 1rem; /* Add spacing between links */
+  font-size: 1.1rem; /* Slightly larger text */
+}
+
+.navbar-nav .nav-link:hover, .offcanvas-title:hover {
+  color: #555; /* Dark grey on hover */
+}
+
+.offcanvas-body {
+  background-color: #f8f9fa; /* Light grey background for offcanvas */
+  padding: 1rem; /* Padding for content */
+}
+
+.offcanvas-body .nav-link {
+  color: #000; /* Black text */
+}
+
+.offcanvas-body .nav-link:hover {
+  color: #555; /* Dark grey on hover */
+}
+
+.dropdown-menu {
+  background-color: #fff; /* White background for dropdown */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 0.25rem; /* Rounded corners */
+}
+
+.dropdown-item {
+  color: #000; /* Black text */
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+}
