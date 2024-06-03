@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaShoppingCart } from 'react-icons/fa';
 import styles from './Navbar.module.css';
 
 function Navbar() {
@@ -39,6 +40,10 @@ function Navbar() {
                 </ul>
               </li>
             </ul>
+            <button className="btn btn-primary" type="button">
+              <FaShoppingCart className={styles.cartIcon} /> {/* Add shopping cart icon */}
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>

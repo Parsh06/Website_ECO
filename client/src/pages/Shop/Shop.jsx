@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../../components/Card/Card';
 import styles from './Shop.module.css';
 
+
 function Shop() {
   return (
     <>
@@ -24,6 +25,7 @@ function Shop() {
           </div>
         </main>
       </div>
+    
     </>
   );
 }
