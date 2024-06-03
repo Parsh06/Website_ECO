@@ -1,12 +1,10 @@
 .homePage {
-  font-family: Arial, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .header {
-  background: white;
-  background-size: cover;
-  background-position: center;
-  color: black;
+  background:white 
+  
 }
 
 .textCenter {
@@ -21,40 +19,43 @@
   font-size: 3rem;
   font-weight: bolder;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
-.header .lead {
+.lead {
   font-size: 1.25rem;
+  font-weight: lighter;
 }
 
-.carousel-container {
-
-  margin-right: 50px;
+.carouselContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.carousel-images {
+.carouselImages {
   width: fit-content;
   border: 5px solid black;
-  flex: 0;
-  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  transition: transform 0.7s, box-shadow 0.7s;
 }
 
-
+.carouselImages:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Larger shadow on hover */
+}
 
 .textContainer {
-  padding: 0 20px;
-  margin-left: 50px;
-
+  padding: 20px;
+  width:auto;
+  margin-left: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  border-radius: 8px;
+  background: white;
 }
 
 .textContainer h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  margin-right: 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bolder;
 }
@@ -63,5 +64,13 @@
   font-weight: bolder;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
-  padding: 10px;
+  padding: 10px 0;
+}
+
+.ctaButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
 }
