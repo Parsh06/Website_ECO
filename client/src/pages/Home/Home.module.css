@@ -1,10 +1,11 @@
+/* Home.module.css */
+
 .homePage {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .header {
-  background:white 
-  
+  background: white;
 }
 
 .textCenter {
@@ -35,20 +36,20 @@
 .carouselImages {
   width: fit-content;
   border: 5px solid black;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.7s, box-shadow 0.7s;
 }
 
 .carouselImages:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Larger shadow on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .textContainer {
   padding: 20px;
-  width:auto;
+  width: 40%;
   margin-left: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background: white;
 }
@@ -67,10 +68,79 @@
   padding: 10px 0;
 }
 
+.container {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cardButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
 .ctaButton {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nextButton, .previousButton {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nextButton:hover, .previousButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .textContainer {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .carouselImages {
+    width: 100%;
+  }
 }

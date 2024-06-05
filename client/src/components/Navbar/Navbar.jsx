@@ -1,8 +1,14 @@
-import React from 'react';
-import { FaShoppingCart } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaShoppingCart, FaUser } from 'react-icons/fa';
 import styles from './Navbar.module.css';
 
 function Navbar() {
+  const [showLogin, setShowLogin] = useState(false);
+
+  const handleLoginClick = () => {
+    setShowLogin(!showLogin);
+  };
+
   return (
     <nav className={`navbar navbar-expand-lg navbar-light bg-light fixed-top ${styles.navbar}`}>
       <div className="container-fluid">
@@ -40,10 +46,23 @@ function Navbar() {
                 </ul>
               </li>
             </ul>
-            <button className="btn btn-primary" type="button">
-              <FaShoppingCart className={styles.cartIcon} /> {/* Add shopping cart icon */}
-              Add to Cart
-            </button>
+            <div className="d-flex">
+              <button className={`btn btn-primary me-3 ${styles.cartButton}`} type="button">
+                <FaShoppingCart className={styles.cartIcon} />
+                <span className={styles.cartCount}>0</span>
+              </button>
+              <div className={`dropdown ${styles.profileDropdown}`}>
+                <button className={`btn btn-primary ${styles.profileButton}`} type="button" onClick={handleLoginClick} data-bs-toggle="dropdown" aria-expanded={showLogin}>
+                  <FaUser className={styles.profileIcon} />
+                </button>
+                {showLogin ? (
+                  <div className={`dropdown-menu ${styles.loginDropdown}`} aria-labelledby="navbarDropdown">
+                    <button className="dropdown-item" type="button" onClick={() => console.log('Login')}>Login</button>
+                    <button className="dropdown-item" type="button" onClick={() => console.log('Signup')}>Signup</button>
+                  </div>
+                ) : null}
+              </div>
+            </div>
           </div>
         </div>
       </div>

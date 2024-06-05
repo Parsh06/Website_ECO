@@ -1,0 +1,44 @@
+.filterContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filterSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .filterSection h4 {
+    margin: 0;
+  }
+  
+  .filterSection select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  
+  .filterSection button {
+    align-self: start;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filterSection button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,32 +1,57 @@
 .shopPage {
-    font-family: Arial, sans-serif;
-  }
-  
-  .header {
-    background: white;
-    background-size: cover;
-    background-position: center;
-    color: black;
-  }
-  
-  .textCenter {
-    background: white;
-    color: black;
-    font-size: larger;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  .header h1 {
-    margin-top: 80px;
-    font-size: 3rem;
-    font-weight: bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  .cardGrid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-between;
-  }
-  
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background: white;
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+.textCenter {
+  background: white;
+  color: black;
+  font-size: larger;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.filterButton {
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.selectedFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filterBadge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.filterBadge span {
+  margin-left: 0.5rem;
+  color: #dc3545;
+}
