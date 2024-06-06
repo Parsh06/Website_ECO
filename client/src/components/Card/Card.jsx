@@ -1,19 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
 
-function Card({ imageUrl, title }) {
-  const handleClick = () => {
-    window.location.href = '/Product'; // Replace with the actual URL of your shopping cart page
-  };
-
+function Card({ id, imageUrl, title, description }) {
   return (
     <div className={styles.card}>
-      <img src={imageUrl} className={styles.cardImgTop} alt={title} />
+      <img src={imageUrl} alt={title} className={styles.cardImage} />
       <div className={styles.cardBody}>
-        <a href="/Product" onClick={handleClick} className={styles.cardButton}>
-          Shop Now
-        </a>
+        <h2>{title}</h2>
+        <p>{description}</p>
       </div>
+      <Link to={`/product/${id}`} className={styles.cardButton}>Shop Now</Link>
     </div>
   );
 }

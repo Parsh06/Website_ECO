@@ -128,8 +128,7 @@ function Home() {
             <Card
               key={cardIndex}
               imageUrl={imageUrls[cardIndex % imageUrls.length]}
-              title={`Product ${cardIndex + 1}`}
-              description={`Description for product ${cardIndex + 1}`}
+             
             />
           ))}
         </div>
@@ -148,18 +147,15 @@ function Home() {
           <div   className={styles.cardGrid}>
           <Card
             imageUrl="https://via.placeholder.com/300?text=Featured+Product+1"
-            title="Featured Product 1"
-            description="Description for featured product 1"
+            
           />
           <Card
             imageUrl="https://via.placeholder.com/300?text=Featured+Product+2"
-            title="Featured Product 2"
-            description="Description for featured product 2"
+            
           />
           <Card
             imageUrl="https://via.placeholder.com/300?text=Featured+Product+3"
-            title="Featured Product 3"
-            description="Description for featured product 3"
+            
           />
      </div>
      </main>

@@ -19,6 +19,19 @@ function Shop() {
     setShowFilters(!showFilters);
   };
 
+  const products = [
+    { id: 1, title: 'Product 1', description: 'Description for product 1', imageUrl: 'https://via.placeholder.com/300' },
+    { id: 2, title: 'Product 2', description: 'Description for product 2', imageUrl: 'https://via.placeholder.com/300' },
+    { id: 1, title: 'Product 1', description: 'Description for product 1', imageUrl: 'https://via.placeholder.com/300' },
+    { id: 2, title: 'Product 2', description: 'Description for product 2', imageUrl: 'https://via.placeholder.com/300' },
+    { id: 1, title: 'Product 1', description: 'Description for product 1', imageUrl: 'https://via.placeholder.com/300' },
+    { id: 2, title: 'Product 2', description: 'Description for product 2', imageUrl: 'https://via.placeholder.com/300' },
+    { id: 1, title: 'Product 1', description: 'Description for product 1', imageUrl: 'https://via.placeholder.com/300' },
+    { id: 2, title: 'Product 2', description: 'Description for product 2', imageUrl: 'https://via.placeholder.com/300' },
+    { id: 2, title: 'Product 2', description: 'Description for product 2', imageUrl: 'https://via.placeholder.com/300' },
+    // Add more products as needed
+  ];
+
   return (
     <>
       <div className={styles.shopPage}>
@@ -43,12 +56,12 @@ function Shop() {
           {showFilters && <Filter addFilter={handleAddFilter} />}
           <main>
             <div className={styles.cardGrid}>
-              {Array.from({ length: 9 }).map((_, index) => (
+              {products.map(product => (
                 <Card
-                  key={index}
-                  imageUrl="https://via.placeholder.com/300"
-                  title={`Product ${index + 1}`}
-                  description={`Description for product ${index + 1}`}
+                  key={product.id}
+                  id={product.id}
+                  imageUrl={product.imageUrl}
+                 
                 />
               ))}
             </div>

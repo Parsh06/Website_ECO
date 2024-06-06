@@ -1,10 +1,11 @@
 .card {
   position: relative;
-  width: 32%; /* Approximately one-third of the container */
+  width: 30%; /* Approximately one-third of the container */
+  height: auto;
   transition: transform 0.9s, box-shadow 0.3s;
-  border: 3px solid #000; /* Add black border */
-  overflow: hidden; /* Ensure the content stays within the card */
-  margin-bottom: 1rem; /* Add space between rows */
+  border: 3px solid #000;
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .card:hover img {
@@ -12,9 +13,9 @@
   z-index: 1;
 }
 
-.cardImgTop {
+.cardImage {
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: transform 0.9s;
 }
 
@@ -24,7 +25,6 @@
   left: 0;
   width: 100%;
   padding: 1rem;
-  
   visibility: hidden; /* Hide by default */
   opacity: 0;
   transition: visibility 0.6s, opacity 0.6s;
@@ -36,15 +36,22 @@
 }
 
 .cardButton {
-  display: inline-block;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0.5rem 1rem;
   background-color: #007bff;
   color: #fff;
   text-align: center;
   border-radius: 0.25rem;
   text-decoration: none;
-  visibility: visible; /* Ensure the button is always visible */
+  visibility: hidden;
   transition: background-color 0.3s;
+}
+
+.card:hover .cardButton {
+  visibility: visible;
 }
 
 .cardButton:hover {
