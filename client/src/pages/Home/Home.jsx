@@ -78,7 +78,7 @@ function Home() {
 
   return (
     <>
-      <Navbar />
+      
       <div className={styles.homePage}>
         <header className={`py-5 mb-4 ${styles.header}`}>
           <div className="container text-center">
@@ -169,7 +169,7 @@ function Home() {
         </form>
       </div> */}
  
-      <Footer />
+     
     </>
   );
 }
