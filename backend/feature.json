@@ -1,0 +1,46 @@
+{
+    "feature": [
+{
+    "id": 18,
+    "imageUrl": "https://via.placeholder.com/300?text=Item+18",
+    "title": "Men's Sunglasses",
+    "description": "Cool and stylish sunglasses for men.",
+    "price": 24.99
+  },
+  {
+    "id": 19,
+    "imageUrl": "https://via.placeholder.com/300?text=Item+19",
+    "title": "Women's Blouse",
+    "description": "A light and airy blouse for women.",
+    "price": 34.99
+  },
+  {
+    "id": 20,
+    "imageUrl": "https://via.placeholder.com/300?text=Item+20",
+    "title": "Kids' Backpack",
+    "description": "A sturdy and spacious backpack for kids.",
+    "price": 29.99
+  },
+  {
+    "id": 18,
+    "imageUrl": "https://via.placeholder.com/300?text=Item+18",
+    "title": "Men's Sunglasses",
+    "description": "Cool and stylish sunglasses for men.",
+    "price": 24.99
+  },
+  {
+    "id": 19,
+    "imageUrl": "https://via.placeholder.com/300?text=Item+19",
+    "title": "Women's Blouse",
+    "description": "A light and airy blouse for women.",
+    "price": 34.99
+  },
+  {
+    "id": 20,
+    "imageUrl": "https://via.placeholder.com/300?text=Item+20",
+    "title": "Kids' Backpack",
+    "description": "A sturdy and spacious backpack for kids.",
+    "price": 29.99
+  }
+]
+}
