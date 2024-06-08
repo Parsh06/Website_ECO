@@ -5,12 +5,17 @@ import styles from './Card.module.css';
 function Card({ id, imageUrl, title, description }) {
   return (
     <div className={styles.card}>
-      <img src={imageUrl} alt={title} className={styles.cardImage} />
+      <img
+        src={imageUrl}
+        alt={title}
+        className={styles.cardImage}
+        onClick={() => window.open(imageUrl, '_blank')}
+      />
       <div className={styles.cardBody}>
         <h2>{title}</h2>
-        <p>{description}</p>
+        <h9>{description}</h9>
       </div>
-      <Link to={`/product/${id}`} className={styles.cardButton}>Shop Now</Link>
+      {/* <Link to={`/product/${id}`} className={styles.cardButton}>Shop Now</Link> */}
     </div>
   );
 }

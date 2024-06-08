@@ -1,36 +1,54 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Card from '../../components/Card/Card';
 import styles from './Shop.module.css';
 import Filter from '../../components/Filter/Filter';
 
 function Shop() {
-  const [filters, setFilters] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [filters, setFilters] = useState({});
   const [showFilters, setShowFilters] = useState(false);
 
-  const handleAddFilter = (filter) => {
-    setFilters([...filters, filter]);
+  useEffect(() => {
+    axios.get('http://localhost:3001/api/products')
+      .then(response => {
+        setProducts(response.data.items);
+      })
+      .catch(error => {
+        console.error('Error fetching the products:', error);
+      });
+  }, []);
+
+  const handleAddFilter = (newFilters) => {
+    setFilters(prevFilters => ({ ...prevFilters, ...newFilters }));
   };
 
-  const handleRemoveFilter = (filterToRemove) => {
-    setFilters(filters.filter(filter => filter !== filterToRemove));
+  const handleRemoveFilter = (filterKey) => {
+    setFilters(prevFilters => {
+      const newFilters = { ...prevFilters };
+      delete newFilters[filterKey];
+      return newFilters;
+    });
   };
 
   const toggleFilters = () => {
     setShowFilters(!showFilters);
   };
 
-  const products = [
-    { id: 1, title: 'Product 1', description: 'Description for product 1', imageUrl: 'https://via.placeholder.com/300' },
-    { id: 2, title: 'Product 2', description: 'Description for product 2', imageUrl: 'https://via.placeholder.com/300' },
-    { id: 1, title: 'Product 1', description: 'Description for product 1', imageUrl: 'https://via.placeholder.com/300' },
-    { id: 2, title: 'Product 2', description: 'Description for product 2', imageUrl: 'https://via.placeholder.com/300' },
-    { id: 1, title: 'Product 1', description: 'Description for product 1', imageUrl: 'https://via.placeholder.com/300' },
-    { id: 2, title: 'Product 2', description: 'Description for product 2', imageUrl: 'https://via.placeholder.com/300' },
-    { id: 1, title: 'Product 1', description: 'Description for product 1', imageUrl: 'https://via.placeholder.com/300' },
-    { id: 2, title: 'Product 2', description: 'Description for product 2', imageUrl: 'https://via.placeholder.com/300' },
-    { id: 2, title: 'Product 2', description: 'Description for product 2', imageUrl: 'https://via.placeholder.com/300' },
-    // Add more products as needed
-  ];
+  const applyFilters = (products) => {
+    return products.filter(product => {
+      return Object.keys(filters).every(key => {
+        if (key === 'price') {
+          const priceRange = filters[key].match(/\d+/g).map(Number);
+          const productPrice = parseFloat(product.price);
+          return productPrice >= priceRange[0] && (priceRange[1] ? productPrice <= priceRange[1] : true);
+        }
+        return product[key] === filters[key];
+      });
+    });
+  };
+
+  const visibleProducts = applyFilters(products);
 
   return (
     <>
@@ -46,25 +64,30 @@ function Shop() {
               {showFilters ? 'Hide Filters' : 'Show Filters'}
             </button>
             <div className={styles.selectedFilters}>
-              {filters.map((filter, index) => (
+              {Object.entries(filters).map(([key, value], index) => (
                 <button key={index} className={`btn btn-light ${styles.filterBadge}`}>
-                  {filter} <span onClick={() => handleRemoveFilter(filter)}>&times;</span>
+                  {`${key}: ${value}`} <span onClick={() => handleRemoveFilter(key)}>&times;</span>
                 </button>
               ))}
             </div>
           </div>
-          {showFilters && <Filter addFilter={handleAddFilter} />}
+          {showFilters && <Filter products={products} addFilter={handleAddFilter} onApplyFilters={() => setShowFilters(false)} />}
           <main>
-            <div className={styles.cardGrid}>
-              {products.map(product => (
-                <Card
-                  key={product.id}
-                  id={product.id}
-                  imageUrl={product.imageUrl}
-                 
-                />
-              ))}
-            </div>
+            {visibleProducts.length === 0 ? (
+              <div className="text-center">No products found</div>
+            ) : (
+              <div className={styles.cardGrid}>
+                {visibleProducts.map((product) => (
+                  <Card
+                    key={product.id}
+                    imageUrl={product.imageUrl}
+                    title={product.title}
+                    description={product.description}
+                    price={product.price}
+                  />
+                ))}
+              </div>
+            )}
           </main>
         </div>
       </div>

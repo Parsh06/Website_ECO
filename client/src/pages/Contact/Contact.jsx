@@ -46,6 +46,13 @@ function Contact() {
   };
 
   return (
+    <>
+    <div className={styles.headPage}>
+        <header className={`bg-light py-3 mb-4 ${styles.head}`}>
+          <div className="container1">
+            <h1 className="text-center">Contact Us</h1>
+          </div>
+        </header>
     <div className={styles.container}>
       <div className={styles.companyDetails}>
         <h2>Company Details</h2>
@@ -55,7 +62,7 @@ function Contact() {
       </div>
       <div className={styles.contactPage}>
         <header className={styles.header}>
-          <h1>Contact Us</h1>
+          <h1>Contact Form</h1>
         </header>
         {!isSubmitted ? (
           <form onSubmit={handleSubmit} className={styles.contactForm}>
@@ -132,6 +139,8 @@ function Contact() {
         )}
       </div>
     </div>
+    </div>
+    </>
   );
 }
 

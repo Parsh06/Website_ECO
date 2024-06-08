@@ -8,6 +8,7 @@ import Login from './components/Login/Login';
 import Footer from './components/Footer/Footer';
 import Product from './pages/Product/Product';
 import Contact from './pages/Contact/Contact';
+import Error from './pages/Error/Error';
 
 function App() {
   return (
@@ -15,14 +16,15 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-        <Route path="/" element={<Home />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Product/:productId" component={Product} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/product/:productId" element={<Product />} />
+          <Route path="*" element={<Error />} />
         </Routes>
-       <Footer />
+        <Footer />
       </Router>
     </div>
   );

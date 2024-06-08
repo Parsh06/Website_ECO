@@ -35,16 +35,7 @@ function Navbar() {
               <li className="nav-item">
                 <a className="nav-link" href="/Contact">Contact</a>
               </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Categories
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Men</a></li>
-                  <li><a className="dropdown-item" href="#">Women</a></li>
-                  <li><a className="dropdown-item" href="#">Kids</a></li>
-                </ul>
-              </li>
+              
             </ul>
             <div className="d-flex">
               <button className={`btn btn-primary me-3 ${styles.cartButton}`} type="button">

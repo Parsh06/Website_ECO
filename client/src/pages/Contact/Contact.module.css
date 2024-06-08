@@ -1,5 +1,5 @@
 .container {
-    margin-top: 100px;
+    margin-top: 50px;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -7,7 +7,30 @@
     padding: 3rem;
     box-sizing: border-box;
   }
-  
+  .head {
+    margin-top: 60px;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: black;
+  }
+  .headPage {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .textCenter {
+    background: white;
+    color: black;
+    font-size:larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .head h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
   .companyDetails {
     padding: 1rem;
     border: 3px solid black;
@@ -18,7 +41,7 @@
     max-width: 500px;
     height: fit-content;
   }
-  
+ 
   .contactPage {
     flex: 1;
     padding: 1rem;
