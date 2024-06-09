@@ -1,22 +1,48 @@
 .card {
   position: relative;
   width: 30%; /* Approximately one-third of the container */
-  height: auto;
+  height: 400px; /* Fixed height for the card */
   transition: transform 0.9s, box-shadow 0.3s;
   border: 3px solid #000;
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
-.card:hover img {
-  transform: scale(1.1);
-  z-index: 1;
+.cardImageContainer {
+  position: relative;
+  width: 100%;
+  height: 70%; /* Fixed height for the image container */
+  overflow: hidden; /* Hide overflow for consistent sizing */
 }
 
 .cardImage {
   width: 100%;
   height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
   transition: transform 0.9s;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.moreInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.6s, opacity 0.6s;
+}
+
+.card:hover .moreInfo {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .cardBody {
@@ -26,15 +52,42 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 30%; /* Fixed height for the card body */
   padding: 1rem;
   visibility: hidden; /* Hide by default */
   opacity: 0;
   transition: visibility 0.6s, opacity 0.6s;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+  overflow: hidden; /* Hide overflow for consistent sizing */
 }
 
 .card:hover .cardBody {
   visibility: visible;
   opacity: 1;
+}
+
+.cardTitle {
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: cyan;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cardDescription {
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .cardButton {

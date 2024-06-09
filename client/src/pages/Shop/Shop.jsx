@@ -80,7 +80,8 @@ function Shop() {
                 {visibleProducts.map((product) => (
                   <Card
                     key={product.id}
-                    imageUrl={product.imageUrl}
+                    id={product.id}
+                    imageUrl={product.imageUrls[0]} // Use the first image from the array
                     title={product.title}
                     description={product.description}
                     price={product.price}

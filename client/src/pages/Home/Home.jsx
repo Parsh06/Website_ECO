@@ -80,7 +80,7 @@ function Home() {
   };
 
   const handleClick = () => {
-    window.location.href = '/product'; 
+    window.location.href = '/product';
   };
 
   const visibleProducts = products.slice(currentStartIndex, currentStartIndex + 3);
@@ -132,13 +132,14 @@ function Home() {
       <main className="container">
         <div className={styles.cardGrid}>
           {visibleProducts.map((product) => (
-            <Card
-              key={product.id}
-              imageUrl={product.imageUrl}
-              title={product.title}
-              description={product.description}
-              price={product.price}
-            />
+             <Card
+             key={product.id}
+             id={product.id}
+             imageUrl={product.imageUrls[0]}
+             title={product.title}
+             description={product.description}
+             price={product.price}
+           />
           ))}
         </div>
         <div className="d-flex justify-content-center">
@@ -156,13 +157,14 @@ function Home() {
       <main className="container">
         <div className={styles.cardGrid}>
           {visibleFeature.map((product) => (
-            <Card
-              key={product.id}
-              imageUrl={product.imageUrl}
-              title={product.title}
-              description={product.description}
-              price={product.price}
-            />
+             <Card
+             key={product.id}
+             id={product.id}
+             imageUrl={product.imageUrls[0]}
+             title={product.title}
+             description={product.description}
+             price={product.price}
+           />
           ))}
         </div>
         <div className="d-flex justify-content-center">

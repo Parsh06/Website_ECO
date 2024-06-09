@@ -2,234 +2,318 @@
   "items": [
     {
       "id": 1,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+1",
       "title": "Classic Men's Shirt",
       "description": "A timeless classic men's shirt made from high-quality cotton.",
       "price": 29.99,
       "feature": true,
-      "color": "Blue",
-      "material": "Cotton",
-      "product": "Shirts"
+      "colors": ["Blue", "White", "Black"],
+      "materials": ["Cotton", "Linen"],
+      "products": ["Shirts", "Apparel"],
+      "imageUrls": [
+        "https://imgs.search.brave.com/y1Vc2CofxDlp6H-mWJtOsMyFrQ-mxj_79aInUZUkO38/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDUzNDg1MzI3NjAt/Njc1M2QyYzQzMzI5/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRCOGZI/Tm9iMlY4Wlc1OE1I/eDhNSHg4ZkRBPQ.jpeg",
+        "https://via.placeholder.com/300?text=Item+1+Image+2",
+        "https://via.placeholder.com/300?text=Item+1+Image+3"
+      ]
     },
     {
       "id": 2,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+2",
       "title": "Women's Casual Dress",
       "description": "A comfortable and stylish casual dress for everyday wear.",
       "price": 39.99,
       "feature": false,
-      "color": "Green",
-      "material": "Polyester",
-      "product": "Dresses"
+      "colors": ["Green", "Red", "Yellow"],
+      "materials": ["Polyester", "Silk"],
+      "products": ["Dresses", "Apparel"],
+      "imageUrls": [
+        "https://imgs.search.brave.com/nwRXvvVJs3N1F_M7VcZmDybh8ZCHKyy_-AgdxSSx_sE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDAxODUzNjU5MjYt/M2EyY2UzY2RiOWVi/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRGOGZI/Tm9iMlZ6ZkdWdWZE/QjhmREI4Zkh3dw",
+        "https://via.placeholder.com/300?text=Item+2+Image+2",
+        "https://via.placeholder.com/300?text=Item+2+Image+3"
+      ]
     },
     {
       "id": 3,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+3",
       "title": "Men's Running Shoes",
       "description": "Lightweight and durable running shoes for daily workouts.",
       "price": 49.99,
       "feature": true,
-      "color": "Red",
-      "material": "Wool",
-      "product": "Shoes"
+      "colors": ["Red", "Blue", "Black"],
+      "materials": ["Wool", "Synthetic"],
+      "products": ["Shoes", "Footwear"],
+      "imageUrls": [
+        "https://imgs.search.brave.com/HCmRwO-JZU6gcxTeAOEgbkD6lw2vhBukmEc1TLDYN5U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDM4MDgwMzMxOTIt/MDgyZDY5MTlkM2Ux/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRsOGZI/Tm9iMlZ6ZkdWdWZE/QjhmREI4Zkh3dw",
+        "https://via.placeholder.com/300?text=Item+3+Image+2",
+        "https://via.placeholder.com/300?text=Item+3+Image+3"
+      ]
     },
     {
       "id": 4,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+4",
       "title": "Women's Handbag",
       "description": "A fashionable handbag with ample space for all your essentials.",
       "price": 59.99,
       "feature": false,
-      "color": "Orange",
-      "material": "Silk",
-      "product": "Handbags"
+      "colors": ["Orange", "Black", "White"],
+      "materials": ["Silk", "Leather"],
+      "products": ["Handbags", "Accessories"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+4",
+        "https://via.placeholder.com/300?text=Item+4+Image+2",
+        "https://via.placeholder.com/300?text=Item+4+Image+3"
+      ]
     },
     {
       "id": 5,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+5",
       "title": "Kids' T-Shirt",
       "description": "A soft and comfortable t-shirt for kids.",
       "price": 15.99,
       "feature": false,
-      "color": "Blue",
-      "material": "Cotton",
-      "product": "T-Shirts"
+      "colors": ["Blue", "Green", "Red"],
+      "materials": ["Cotton", "Polyester"],
+      "products": ["T-Shirts", "Apparel"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+5",
+        "https://via.placeholder.com/300?text=Item+5+Image+2",
+        "https://via.placeholder.com/300?text=Item+5+Image+3"
+      ]
     },
     {
       "id": 6,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+6",
       "title": "Men's Leather Jacket",
       "description": "A stylish and durable leather jacket for men.",
       "price": 99.99,
       "feature": true,
-      "color": "Brown",
-      "material": "Leather",
-      "product": "Jackets"
+      "colors": ["Brown", "Black", "Tan"],
+      "materials": ["Leather", "Suede"],
+      "products": ["Jackets", "Apparel"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+6",
+        "https://via.placeholder.com/300?text=Item+6+Image+2",
+        "https://via.placeholder.com/300?text=Item+6+Image+3"
+      ]
     },
     {
       "id": 7,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+7",
       "title": "Women's Yoga Pants",
       "description": "Comfortable and stretchy yoga pants for women.",
       "price": 25.99,
       "feature": false,
-      "color": "Purple",
-      "material": "Spandex",
-      "product": "Pants"
+      "colors": ["Purple", "Black", "Gray"],
+      "materials": ["Spandex", "Polyester"],
+      "products": ["Pants", "Activewear"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+7",
+        "https://via.placeholder.com/300?text=Item+7+Image+2",
+        "https://via.placeholder.com/300?text=Item+7+Image+3"
+      ]
     },
     {
       "id": 8,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+8",
       "title": "Men's Wrist Watch",
       "description": "A sleek and modern wrist watch for men.",
       "price": 79.99,
       "feature": true,
-      "color": "Silver",
-      "material": "Metal",
-      "product": "Watches"
+      "colors": ["Silver", "Black", "Gold"],
+      "materials": ["Metal", "Leather"],
+      "products": ["Watches", "Accessories"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+8",
+        "https://via.placeholder.com/300?text=Item+8+Image+2",
+        "https://via.placeholder.com/300?text=Item+8+Image+3"
+      ]
     },
     {
       "id": 9,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+9",
       "title": "Women's Sunglasses",
       "description": "Stylish sunglasses with UV protection for women.",
       "price": 19.99,
       "feature": false,
-      "color": "Black",
-      "material": "Acetate",
-      "product": "Sunglasses"
+      "colors": ["Black", "Brown", "Blue"],
+      "materials": ["Acetate", "Plastic"],
+      "products": ["Sunglasses", "Accessories"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+9",
+        "https://via.placeholder.com/300?text=Item+9+Image+2",
+        "https://via.placeholder.com/300?text=Item+9+Image+3"
+      ]
     },
     {
       "id": 10,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+10",
       "title": "Kids' Sneakers",
       "description": "Comfortable and durable sneakers for kids.",
       "price": 29.99,
       "feature": false,
-      "color": "White",
-      "material": "Synthetic",
-      "product": "Shoes"
+      "colors": ["White", "Black", "Red"],
+      "materials": ["Synthetic", "Canvas"],
+      "products": ["Shoes", "Footwear"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+10",
+        "https://via.placeholder.com/300?text=Item+10+Image+2",
+        "https://via.placeholder.com/300?text=Item+10+Image+3"
+      ]
     },
     {
       "id": 11,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+11",
       "title": "Men's Belt",
       "description": "A high-quality leather belt for men.",
       "price": 19.99,
       "feature": true,
-      "color": "Brown",
-      "material": "Leather",
-      "product": "Accessories"
+      "colors": ["Brown", "Black", "Tan"],
+      "materials": ["Leather", "Synthetic"],
+      "products": ["Accessories", "Belts"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+11",
+        "https://via.placeholder.com/300?text=Item+11+Image+2",
+        "https://via.placeholder.com/300?text=Item+11+Image+3"
+      ]
     },
     {
       "id": 12,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+12",
       "title": "Women's Scarf",
       "description": "A soft and warm scarf for women.",
       "price": 15.99,
       "feature": false,
-      "color": "Pink",
-      "material": "Wool",
-      "product": "Accessories"
+      "colors": ["Pink", "Red", "Blue"],
+      "materials": ["Wool", "Cotton"],
+      "products": ["Accessories", "Scarves"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+12",
+        "https://via.placeholder.com/300?text=Item+12+Image+2",
+        "https://via.placeholder.com/300?text=Item+12+Image+3"
+      ]
     },
     {
       "id": 13,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+13",
       "title": "Men's Jeans",
       "description": "Stylish and comfortable jeans for men.",
       "price": 49.99,
       "feature": true,
-      "color": "Blue",
-      "material": "Cotton",
-      "product": "Pants"
+      "colors": ["Blue", "Black", "Gray"],
+      "materials": ["Cotton", "Denim"],
+      "products": ["Pants", "Apparel"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+13",
+        "https://via.placeholder.com/300?text=Item+13+Image+2",
+        "https://via.placeholder.com/300?text=Item+13+Image+3"
+      ]
     },
     {
       "id": 14,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+14",
       "title": "Women's Necklace",
       "description": "A beautiful and elegant necklace for women.",
       "price": 29.99,
       "feature": false,
-      "color": "Gold",
-      "material": "Jewelry",
-      "product": "Jewelry"
+      "colors": ["Gold", "Silver", "Rose Gold"],
+      "materials": ["Jewelry", "Metal"],
+      "products": ["Jewelry", "Accessories"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+14",
+        "https://via.placeholder.com/300?text=Item+14+Image+2",
+        "https://via.placeholder.com/300?text=Item+14+Image+3"
+      ]
     },
     {
       "id": 15,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+15",
       "title": "Kids' Hat",
       "description": "A cute and cozy hat for kids.",
       "price": 12.99,
       "feature": false,
-      "color": "Red",
-      "material": "Wool",
-      "product": "Accessories"
+      "colors": ["Red", "Blue", "Green"],
+      "materials": ["Wool", "Cotton"],
+      "products": ["Accessories", "Hats"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+15",
+        "https://via.placeholder.com/300?text=Item+15+Image+2",
+        "https://via.placeholder.com/300?text=Item+15+Image+3"
+      ]
     },
     {
       "id": 16,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+16",
       "title": "Men's Hoodie",
       "description": "A warm and comfortable hoodie for men.",
       "price": 39.99,
       "feature": true,
-      "color": "Navy",
-      "material": "Cotton",
-      "product": "Apparel"
+      "colors": ["Navy", "Black", "Gray"],
+      "materials": ["Cotton", "Polyester"],
+      "products": ["Apparel", "Hoodies"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+16",
+        "https://via.placeholder.com/300?text=Item+16+Image+2",
+        "https://via.placeholder.com/300?text=Item+16+Image+3"
+      ]
     },
     {
       "id": 17,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+17",
       "title": "Women's Bracelet",
       "description": "A stylish and trendy bracelet for women.",
       "price": 19.99,
       "feature": false,
-      "color": "Silver",
-      "material": "Jewelry",
-      "product": "Jewelry"
+      "colors": ["Silver", "Gold", "Rose Gold"],
+      "materials": ["Jewelry", "Metal"],
+      "products": ["Jewelry", "Accessories"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+17",
+        "https://via.placeholder.com/300?text=Item+17+Image+2",
+        "https://via.placeholder.com/300?text=Item+17+Image+3"
+      ]
     },
     {
       "id": 18,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+18",
       "title": "Men's Sunglasses",
       "description": "Cool and stylish sunglasses for men.",
       "price": 24.99,
       "feature": true,
-      "color": "Black",
-      "material": "Acetate",
-      "product": "Sunglasses"
+      "colors": ["Black", "Brown", "Gray"],
+      "materials": ["Acetate", "Plastic"],
+      "products": ["Sunglasses", "Accessories"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+18",
+        "https://via.placeholder.com/300?text=Item+18+Image+2",
+        "https://via.placeholder.com/300?text=Item+18+Image+3"
+      ]
     },
     {
       "id": 19,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+19",
       "title": "Women's Blouse",
       "description": "A light and airy blouse for women.",
       "price": 34.99,
       "feature": false,
-      "color": "Pink",
-      "material": "Cotton",
-      "product": "Apparel"
+      "colors": ["Pink", "White", "Blue"],
+      "materials": ["Cotton", "Polyester"],
+      "products": ["Apparel", "Blouses"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+19",
+        "https://via.placeholder.com/300?text=Item+19+Image+2",
+        "https://via.placeholder.com/300?text=Item+19+Image+3"
+      ]
     },
     {
       "id": 20,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+20",
       "title": "Kids' Backpack",
       "description": "A sturdy and spacious backpack for kids.",
       "price": 29.99,
       "feature": false,
-      "color": "Blue",
-      "material": "Synthetic",
-      "product": "Backpacks"
+      "colors": ["Blue", "Red", "Green"],
+      "materials": ["Synthetic", "Canvas"],
+      "products": ["Backpacks", "Accessories"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+20",
+        "https://via.placeholder.com/300?text=Item+20+Image+2",
+        "https://via.placeholder.com/300?text=Item+20+Image+3"
+      ]
     },
     {
       "id": 21,
-      "imageUrl": "https://via.placeholder.com/300?text=Item+21",
       "title": "Kids' Wear",
-      "description": "A sturdy and spacious Wear for kids.",
+      "description": "Comfortable and stylish wear for kids.",
       "price": 50.99,
       "feature": false,
-      "color": "Blue",
-      "material": "Synthetic",
-      "product": "Wears"
+      "colors": ["Blue", "Yellow", "Green"],
+      "materials": ["Cotton", "Polyester"],
+      "products": ["Wears", "Apparel"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+21",
+        "https://via.placeholder.com/300?text=Item+21+Image+2",
+        "https://via.placeholder.com/300?text=Item+21+Image+3"
+      ]
     }
   ]
 }
