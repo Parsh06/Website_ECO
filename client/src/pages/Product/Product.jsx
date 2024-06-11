@@ -12,19 +12,23 @@ function Product() {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showConfirmation, setShowConfirmation] = useState(false);
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem('cart');
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
 
   useEffect(() => {
     axios.get('http://localhost:3001/api/products')
       .then(response => {
         const products = response.data.items;
         const foundProduct = products.find(p => p.id === parseInt(productId));
-        setProduct(foundProduct);
-        setLoading(false);
         if (foundProduct) {
-          setSelectedColor(foundProduct.colors[0]);
-          setSelectedMaterial(foundProduct.materials[0]);
-          setSelectedCategory(foundProduct.products[0]);
+          setProduct(foundProduct);
+          setSelectedColor(foundProduct.colors?.[0] || '');
+          setSelectedMaterial(foundProduct.materials?.[0] || '');
+          setSelectedCategory(foundProduct.categories?.[0] || '');
         }
+        setLoading(false);
       })
       .catch(error => {
         console.error('Error fetching the product data:', error);
@@ -45,18 +49,22 @@ function Product() {
   };
 
   const handleNextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % product.imageUrls.length);
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % (product.imageUrls?.length || 1));
   };
 
   const handlePreviousImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + product.imageUrls.length) % product.imageUrls.length);
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + (product.imageUrls?.length || 1)) % (product.imageUrls?.length || 1));
   };
 
   const handleAddToCart = () => {
+    const newCart = [...cart, { ...product, selectedColor, selectedMaterial, selectedCategory }];
+    setCart(newCart);
+    localStorage.setItem('cart', JSON.stringify(newCart));
     setShowConfirmation(true);
     setTimeout(() => {
       setShowConfirmation(false);
-    }, 2000); // Hide confirmation after 2 seconds
+      window.location.reload(); // Refresh the page
+    }, 1000); // Hide confirmation and refresh page after 1 second
   };
 
   if (loading) {
@@ -72,22 +80,21 @@ function Product() {
       {showConfirmation && (
         <div className={styles.confirmationOverlay}>
           <div className={styles.confirmationBox}>
-            <p>Done</p>
-            
+            <p>Added to Cart</p>
           </div>
         </div>
       )}
       <div className={`${styles.headPage} ${showConfirmation ? styles.hidden : ''}`}>
         <header className={`bg-light py-3 mb-4 ${styles.head}`}>
-          <div className="container1">
-            <h1 className="text-center">Product Details</h1>
+          <div className="container text-center">
+            <h1>Product Details</h1>
           </div>
         </header>
         <div className={styles.productPage}>
           <div className={styles.imagesGrid}>
             <button onClick={handlePreviousImage} className={styles.imageNavButton}>Previous</button>
             <div className={styles.imageContainer}>
-              <img src={product.imageUrls[currentImageIndex]} alt={product.title} className={styles.productImage} />
+              <img src={product.imageUrls?.[currentImageIndex]} alt={product.title} className={styles.productImage} />
             </div>
             <button onClick={handleNextImage} className={styles.imageNavButton}>Next</button>
           </div>
@@ -98,7 +105,7 @@ function Product() {
             <div className={styles.productDetail}>
               <strong>Colors:</strong>
               <div className={styles.optionsRow}>
-                {product.colors.map(color => (
+                {product.colors?.map(color => (
                   <label key={color} className={styles.colorOption}>
                     <input 
                       type="checkbox" 
@@ -114,7 +121,7 @@ function Product() {
             <div className={styles.productDetail}>
               <strong>Materials:</strong>
               <div className={styles.optionsRow}>
-                {product.materials.map(material => (
+                {product.materials?.map(material => (
                   <label key={material} className={styles.colorOption}>
                     <input 
                       type="checkbox" 
@@ -130,7 +137,7 @@ function Product() {
             <div className={styles.productDetail}>
               <strong>Categories:</strong>
               <div className={styles.optionsRow}>
-                {product.products.map(category => (
+                {product.products?.map(category => (
                   <label key={category} className={styles.colorOption}>
                     <input 
                       type="checkbox" 

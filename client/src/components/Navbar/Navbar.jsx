@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
-function Navbar() {
+function Navbar({ cart }) {
   const [showLogin, setShowLogin] = useState(false);
 
   const handleLoginClick = () => {
     setShowLogin(!showLogin);
   };
+
+  const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <nav className={`navbar navbar-expand-lg navbar-light bg-light fixed-top ${styles.navbar}`}>
@@ -35,13 +38,12 @@ function Navbar() {
               <li className="nav-item">
                 <a className="nav-link" href="/Contact">Contact</a>
               </li>
-              
             </ul>
             <div className="d-flex">
-              <button className={`btn btn-primary me-3 ${styles.cartButton}`} type="button">
+              <Link to="/cart" className={`btn btn-primary me-3 ${styles.cartButton}`} type="button">
                 <FaShoppingCart className={styles.cartIcon} />
-                <span className={styles.cartCount}>0</span>
-              </button>
+                <span className={styles.cartCount}>{cartItemCount}</span>
+              </Link>
               <div className={`dropdown ${styles.profileDropdown}`}>
                 <button className={`btn btn-primary ${styles.profileButton}`} type="button" onClick={handleLoginClick} data-bs-toggle="dropdown" aria-expanded={showLogin}>
                   <FaUser className={styles.profileIcon} />

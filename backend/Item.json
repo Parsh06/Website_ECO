@@ -13,7 +13,9 @@
         "https://imgs.search.brave.com/y1Vc2CofxDlp6H-mWJtOsMyFrQ-mxj_79aInUZUkO38/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDUzNDg1MzI3NjAt/Njc1M2QyYzQzMzI5/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRCOGZI/Tm9iMlY4Wlc1OE1I/eDhNSHg4ZkRBPQ.jpeg",
         "https://via.placeholder.com/300?text=Item+1+Image+2",
         "https://via.placeholder.com/300?text=Item+1+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 2,
@@ -28,7 +30,9 @@
         "https://imgs.search.brave.com/nwRXvvVJs3N1F_M7VcZmDybh8ZCHKyy_-AgdxSSx_sE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDAxODUzNjU5MjYt/M2EyY2UzY2RiOWVi/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRGOGZI/Tm9iMlZ6ZkdWdWZE/QjhmREI4Zkh3dw",
         "https://via.placeholder.com/300?text=Item+2+Image+2",
         "https://via.placeholder.com/300?text=Item+2+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": false
     },
     {
       "id": 3,
@@ -43,7 +47,9 @@
         "https://imgs.search.brave.com/HCmRwO-JZU6gcxTeAOEgbkD6lw2vhBukmEc1TLDYN5U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDM4MDgwMzMxOTIt/MDgyZDY5MTlkM2Ux/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRsOGZI/Tm9iMlZ6ZkdWdWZE/QjhmREI4Zkh3dw",
         "https://via.placeholder.com/300?text=Item+3+Image+2",
         "https://via.placeholder.com/300?text=Item+3+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 4,
@@ -58,7 +64,9 @@
         "https://via.placeholder.com/300?text=Item+4",
         "https://via.placeholder.com/300?text=Item+4+Image+2",
         "https://via.placeholder.com/300?text=Item+4+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": false
     },
     {
       "id": 5,
@@ -73,7 +81,9 @@
         "https://via.placeholder.com/300?text=Item+5",
         "https://via.placeholder.com/300?text=Item+5+Image+2",
         "https://via.placeholder.com/300?text=Item+5+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 6,
@@ -88,7 +98,9 @@
         "https://via.placeholder.com/300?text=Item+6",
         "https://via.placeholder.com/300?text=Item+6+Image+2",
         "https://via.placeholder.com/300?text=Item+6+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 7,
@@ -103,7 +115,9 @@
         "https://via.placeholder.com/300?text=Item+7",
         "https://via.placeholder.com/300?text=Item+7+Image+2",
         "https://via.placeholder.com/300?text=Item+7+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 8,
@@ -118,7 +132,9 @@
         "https://via.placeholder.com/300?text=Item+8",
         "https://via.placeholder.com/300?text=Item+8+Image+2",
         "https://via.placeholder.com/300?text=Item+8+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": false
     },
     {
       "id": 9,
@@ -133,187 +149,366 @@
         "https://via.placeholder.com/300?text=Item+9",
         "https://via.placeholder.com/300?text=Item+9+Image+2",
         "https://via.placeholder.com/300?text=Item+9+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 10,
       "title": "Kids' Sneakers",
-      "description": "Comfortable and durable sneakers for kids.",
+      "description": "Durable and comfortable sneakers for kids.",
       "price": 29.99,
       "feature": false,
-      "colors": ["White", "Black", "Red"],
-      "materials": ["Synthetic", "Canvas"],
+      "colors": ["Red", "Blue", "Yellow"],
+      "materials": ["Synthetic", "Rubber"],
       "products": ["Shoes", "Footwear"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+10",
         "https://via.placeholder.com/300?text=Item+10+Image+2",
         "https://via.placeholder.com/300?text=Item+10+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 11,
-      "title": "Men's Belt",
-      "description": "A high-quality leather belt for men.",
-      "price": 19.99,
+      "title": "Men's Casual Blazer",
+      "description": "A versatile blazer for casual and formal occasions.",
+      "price": 79.99,
       "feature": true,
-      "colors": ["Brown", "Black", "Tan"],
-      "materials": ["Leather", "Synthetic"],
-      "products": ["Accessories", "Belts"],
+      "colors": ["Navy", "Gray", "Black"],
+      "materials": ["Wool", "Cotton"],
+      "products": ["Blazers", "Apparel"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+11",
         "https://via.placeholder.com/300?text=Item+11+Image+2",
         "https://via.placeholder.com/300?text=Item+11+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 12,
-      "title": "Women's Scarf",
-      "description": "A soft and warm scarf for women.",
-      "price": 15.99,
+      "title": "Women's Leather Boots",
+      "description": "Stylish leather boots perfect for any season.",
+      "price": 89.99,
       "feature": false,
-      "colors": ["Pink", "Red", "Blue"],
-      "materials": ["Wool", "Cotton"],
-      "products": ["Accessories", "Scarves"],
+      "colors": ["Black", "Brown", "Tan"],
+      "materials": ["Leather", "Rubber"],
+      "products": ["Boots", "Footwear"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+12",
         "https://via.placeholder.com/300?text=Item+12+Image+2",
         "https://via.placeholder.com/300?text=Item+12+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": false
     },
     {
       "id": 13,
-      "title": "Men's Jeans",
-      "description": "Stylish and comfortable jeans for men.",
-      "price": 49.99,
+      "title": "Men's Wool Scarf",
+      "description": "A cozy wool scarf to keep you warm in winter.",
+      "price": 24.99,
       "feature": true,
-      "colors": ["Blue", "Black", "Gray"],
-      "materials": ["Cotton", "Denim"],
-      "products": ["Pants", "Apparel"],
+      "colors": ["Red", "Gray", "Black"],
+      "materials": ["Wool", "Acrylic"],
+      "products": ["Scarves", "Accessories"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+13",
         "https://via.placeholder.com/300?text=Item+13+Image+2",
         "https://via.placeholder.com/300?text=Item+13+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 14,
-      "title": "Women's Necklace",
-      "description": "A beautiful and elegant necklace for women.",
-      "price": 29.99,
+      "title": "Women's Silk Blouse",
+      "description": "Elegant silk blouse perfect for professional settings.",
+      "price": 49.99,
       "feature": false,
-      "colors": ["Gold", "Silver", "Rose Gold"],
-      "materials": ["Jewelry", "Metal"],
-      "products": ["Jewelry", "Accessories"],
+      "colors": ["White", "Pink", "Blue"],
+      "materials": ["Silk", "Polyester"],
+      "products": ["Blouses", "Apparel"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+14",
         "https://via.placeholder.com/300?text=Item+14+Image+2",
         "https://via.placeholder.com/300?text=Item+14+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 15,
-      "title": "Kids' Hat",
-      "description": "A cute and cozy hat for kids.",
-      "price": 12.99,
-      "feature": false,
-      "colors": ["Red", "Blue", "Green"],
-      "materials": ["Wool", "Cotton"],
-      "products": ["Accessories", "Hats"],
+      "title": "Men's Denim Jeans",
+      "description": "Classic denim jeans that never go out of style.",
+      "price": 59.99,
+      "feature": true,
+      "colors": ["Blue", "Black", "Gray"],
+      "materials": ["Denim", "Cotton"],
+      "products": ["Jeans", "Apparel"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+15",
         "https://via.placeholder.com/300?text=Item+15+Image+2",
         "https://via.placeholder.com/300?text=Item+15+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 16,
-      "title": "Men's Hoodie",
-      "description": "A warm and comfortable hoodie for men.",
-      "price": 39.99,
-      "feature": true,
-      "colors": ["Navy", "Black", "Gray"],
-      "materials": ["Cotton", "Polyester"],
-      "products": ["Apparel", "Hoodies"],
+      "title": "Women's Cashmere Sweater",
+      "description": "Luxurious cashmere sweater for ultimate comfort.",
+      "price": 99.99,
+      "feature": false,
+      "colors": ["Gray", "Blue", "Red"],
+      "materials": ["Cashmere", "Wool"],
+      "products": ["Sweaters", "Apparel"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+16",
         "https://via.placeholder.com/300?text=Item+16+Image+2",
         "https://via.placeholder.com/300?text=Item+16+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": false
     },
     {
       "id": 17,
-      "title": "Women's Bracelet",
-      "description": "A stylish and trendy bracelet for women.",
-      "price": 19.99,
-      "feature": false,
-      "colors": ["Silver", "Gold", "Rose Gold"],
-      "materials": ["Jewelry", "Metal"],
-      "products": ["Jewelry", "Accessories"],
+      "title": "Men's Formal Shoes",
+      "description": "Elegant formal shoes for special occasions.",
+      "price": 129.99,
+      "feature": true,
+      "colors": ["Black", "Brown", "Tan"],
+      "materials": ["Leather", "Rubber"],
+      "products": ["Shoes", "Footwear"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+17",
         "https://via.placeholder.com/300?text=Item+17+Image+2",
         "https://via.placeholder.com/300?text=Item+17+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 18,
-      "title": "Men's Sunglasses",
-      "description": "Cool and stylish sunglasses for men.",
-      "price": 24.99,
-      "feature": true,
-      "colors": ["Black", "Brown", "Gray"],
-      "materials": ["Acetate", "Plastic"],
-      "products": ["Sunglasses", "Accessories"],
+      "title": "Women's Knit Cardigan",
+      "description": "Cozy knit cardigan perfect for layering.",
+      "price": 69.99,
+      "feature": false,
+      "colors": ["Beige", "Brown", "Gray"],
+      "materials": ["Wool", "Acrylic"],
+      "products": ["Cardigans", "Apparel"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+18",
         "https://via.placeholder.com/300?text=Item+18+Image+2",
         "https://via.placeholder.com/300?text=Item+18+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 19,
-      "title": "Women's Blouse",
-      "description": "A light and airy blouse for women.",
-      "price": 34.99,
-      "feature": false,
-      "colors": ["Pink", "White", "Blue"],
-      "materials": ["Cotton", "Polyester"],
-      "products": ["Apparel", "Blouses"],
+      "title": "Men's Beanie Hat",
+      "description": "Stylish beanie hat for chilly weather.",
+      "price": 14.99,
+      "feature": true,
+      "colors": ["Black", "Gray", "Navy"],
+      "materials": ["Wool", "Acrylic"],
+      "products": ["Hats", "Accessories"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+19",
         "https://via.placeholder.com/300?text=Item+19+Image+2",
         "https://via.placeholder.com/300?text=Item+19+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
     },
     {
       "id": 20,
-      "title": "Kids' Backpack",
-      "description": "A sturdy and spacious backpack for kids.",
-      "price": 29.99,
+      "title": "Women's Summer Dress",
+      "description": "Light and breezy summer dress for warm days.",
+      "price": 34.99,
       "feature": false,
-      "colors": ["Blue", "Red", "Green"],
-      "materials": ["Synthetic", "Canvas"],
-      "products": ["Backpacks", "Accessories"],
+      "colors": ["Yellow", "White", "Pink"],
+      "materials": ["Cotton", "Linen"],
+      "products": ["Dresses", "Apparel"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+20",
         "https://via.placeholder.com/300?text=Item+20+Image+2",
         "https://via.placeholder.com/300?text=Item+20+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": false
     },
     {
       "id": 21,
-      "title": "Kids' Wear",
-      "description": "Comfortable and stylish wear for kids.",
-      "price": 50.99,
-      "feature": false,
-      "colors": ["Blue", "Yellow", "Green"],
+      "title": "Men's Casual Shorts",
+      "description": "Comfortable casual shorts for everyday wear.",
+      "price": 24.99,
+      "feature": true,
+      "colors": ["Khaki", "Navy", "Gray"],
       "materials": ["Cotton", "Polyester"],
-      "products": ["Wears", "Apparel"],
+      "products": ["Shorts", "Apparel"],
       "imageUrls": [
         "https://via.placeholder.com/300?text=Item+21",
         "https://via.placeholder.com/300?text=Item+21+Image+2",
         "https://via.placeholder.com/300?text=Item+21+Image+3"
-      ]
+      ],
+      "quantity": 1,
+      "stocked": true
+    },
+    {
+      "id": 22,
+      "title": "Women's Running Shoes",
+      "description": "High-performance running shoes for women.",
+      "price": 59.99,
+      "feature": false,
+      "colors": ["Pink", "Gray", "Black"],
+      "materials": ["Synthetic", "Rubber"],
+      "products": ["Shoes", "Footwear"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+22",
+        "https://via.placeholder.com/300?text=Item+22+Image+2",
+        "https://via.placeholder.com/300?text=Item+22+Image+3"
+      ],
+      "quantity": 1,
+      "stocked": true
+    },
+    {
+      "id": 23,
+      "title": "Men's Leather Belt",
+      "description": "Classic leather belt for any occasion.",
+      "price": 29.99,
+      "feature": true,
+      "colors": ["Black", "Brown", "Tan"],
+      "materials": ["Leather", "Metal"],
+      "products": ["Belts", "Accessories"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+23",
+        "https://via.placeholder.com/300?text=Item+23+Image+2",
+        "https://via.placeholder.com/300?text=Item+23+Image+3"
+      ],
+      "quantity": 1,
+      "stocked": true
+    },
+    {
+      "id": 24,
+      "title": "Women's Denim Jacket",
+      "description": "Trendy denim jacket for a casual look.",
+      "price": 69.99,
+      "feature": false,
+      "colors": ["Blue", "Black", "White"],
+      "materials": ["Denim", "Cotton"],
+      "products": ["Jackets", "Apparel"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+24",
+        "https://via.placeholder.com/300?text=Item+24+Image+2",
+        "https://via.placeholder.com/300?text=Item+24+Image+3"
+      ],
+      "quantity": 1,
+      "stocked": true
+    },
+    {
+      "id": 25,
+      "title": "Men's Athletic Socks",
+      "description": "Comfortable and breathable athletic socks.",
+      "price": 12.99,
+      "feature": true,
+      "colors": ["White", "Black", "Gray"],
+      "materials": ["Cotton", "Spandex"],
+      "products": ["Socks", "Accessories"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+25",
+        "https://via.placeholder.com/300?text=Item+25+Image+2",
+        "https://via.placeholder.com/300?text=Item+25+Image+3"
+      ],
+      "quantity": 1,
+      "stocked": true
+    },
+    {
+      "id": 26,
+      "title": "Women's Winter Coat",
+      "description": "Warm and stylish winter coat for women.",
+      "price": 119.99,
+      "feature": false,
+      "colors": ["Black", "Navy", "Gray"],
+      "materials": ["Wool", "Polyester"],
+      "products": ["Coats", "Apparel"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+26",
+        "https://via.placeholder.com/300?text=Item+26+Image+2",
+        "https://via.placeholder.com/300?text=Item+26+Image+3"
+      ],
+      "quantity": 1,
+      "stocked": false
+    },
+    {
+      "id": 27,
+      "title": "Men's Hoodie",
+      "description": "Comfortable and stylish hoodie for men.",
+      "price": 39.99,
+      "feature": true,
+      "colors": ["Gray", "Black", "Blue"],
+      "materials": ["Cotton", "Polyester"],
+      "products": ["Hoodies", "Apparel"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+27",
+        "https://via.placeholder.com/300?text=Item+27+Image+2",
+        "https://via.placeholder.com/300?text=Item+27+Image+3"
+      ],
+      "quantity": 1,
+      "stocked": true
+    },
+    {
+      "id": 28,
+      "title": "Women's Ankle Boots",
+      "description": "Chic ankle boots for a stylish look.",
+      "price": 79.99,
+      "feature": false,
+      "colors": ["Black", "Brown", "Gray"],
+      "materials": ["Leather", "Rubber"],
+      "products": ["Boots", "Footwear"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+28",
+        "https://via.placeholder.com/300?text=Item+28+Image+2",
+        "https://via.placeholder.com/300?text=Item+28+Image+3"
+      ],
+      "quantity": 1,
+      "stocked": true
+    },
+    {
+      "id": 29,
+      "title": "Men's Dress Shirt",
+      "description": "Sharp dress shirt for formal events.",
+      "price": 49.99,
+      "feature": true,
+      "colors": ["White", "Blue", "Gray"],
+      "materials": ["Cotton", "Polyester"],
+      "products": ["Shirts", "Apparel"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+29",
+        "https://via.placeholder.com/300?text=Item+29+Image+2",
+        "https://via.placeholder.com/300?text=Item+29+Image+3"
+      ],
+      "quantity": 1,
+      "stocked": true
+    },
+    {
+      "id": 30,
+      "title": "Women's Tote Bag",
+      "description": "Spacious and stylish tote bag for everyday use.",
+      "price": 59.99,
+      "feature": false,
+      "colors": ["Black", "Brown", "Tan"],
+      "materials": ["Leather", "Cotton"],
+      "products": ["Bags", "Accessories"],
+      "imageUrls": [
+        "https://via.placeholder.com/300?text=Item+30",
+        "https://via.placeholder.com/300?text=Item+30+Image+2",
+        "https://via.placeholder.com/300?text=Item+30+Image+3"
+      ],
+      "quantity": 1,
+      "stocked": false
     }
   ]
 }

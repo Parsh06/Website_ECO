@@ -132,14 +132,15 @@ function Home() {
       <main className="container">
         <div className={styles.cardGrid}>
           {visibleProducts.map((product) => (
-             <Card
-             key={product.id}
-             id={product.id}
-             imageUrl={product.imageUrls[0]}
-             title={product.title}
-             description={product.description}
-             price={product.price}
-           />
+            <Card
+              key={product.id}
+              id={product.id}
+              imageUrl={product.imageUrls[0]}
+              title={product.title}
+              description={product.description}
+              price={product.price}
+              stocked={product.stocked} // Pass stocked prop
+            />
           ))}
         </div>
         <div className="d-flex justify-content-center">
@@ -157,14 +158,15 @@ function Home() {
       <main className="container">
         <div className={styles.cardGrid}>
           {visibleFeature.map((product) => (
-             <Card
-             key={product.id}
-             id={product.id}
-             imageUrl={product.imageUrls[0]}
-             title={product.title}
-             description={product.description}
-             price={product.price}
-           />
+            <Card
+              key={product.id}
+              id={product.id}
+              imageUrl={product.imageUrls[0]}
+              title={product.title}
+              description={product.description}
+              price={product.price}
+              stocked={product.stocked} // Pass stocked prop
+            />
           ))}
         </div>
         <div className="d-flex justify-content-center">

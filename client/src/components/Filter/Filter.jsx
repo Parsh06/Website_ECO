@@ -1,14 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Filter.module.css';
 
-function Filter({ products, addFilter, onApplyFilters }) {
-  const [color, setColor] = useState('');
+function Filter({ products, addFilter, clearFilters, onApplyFilters }) {
+  const [selectedColors, setSelectedColors] = useState([]);
+  const [selectedMaterials, setSelectedMaterials] = useState([]);
+  const [selectedCategories, setSelectedCategories] = useState([]);
   const [price, setPrice] = useState('');
-  const [material, setMaterial] = useState('');
-  const [product, setProduct] = useState('');
+
+  useEffect(() => {
+    setPrice('');
+  }, [products]);
 
   const uniqueValues = (key) => {
-    return [...new Set(products.map(product => product[key]))].filter(value => value);
+    return [...new Set(products.flatMap(product => product[key]))].filter(value => value);
+  };
+
+  const handleCheckboxChange = (e, setFilter, selectedValues) => {
+    const value = e.target.value;
+    setFilter(selectedValues.includes(value)
+      ? selectedValues.filter(v => v !== value)
+      : [...selectedValues, value]);
   };
 
   const handleFilterChange = (e, setFilter) => {
@@ -17,28 +28,75 @@ function Filter({ products, addFilter, onApplyFilters }) {
 
   const handleAddFilter = () => {
     const newFilter = {};
-    if (color) newFilter.color = color;
-    if (price) newFilter.price = price;
-    if (material) newFilter.material = material;
-    if (product) newFilter.product = product;
+    if (selectedColors.length) newFilter.colors = selectedColors;
+    if (selectedMaterials.length) newFilter.materials = selectedMaterials;
+    if (selectedCategories.length) newFilter.categories = selectedCategories;
+    if (price) {
+      const [minPrice, maxPrice] = price.split(' - ');
+      newFilter.price = [parseInt(minPrice.replace('$', '')), parseInt(maxPrice.replace('$', ''))];
+    }
+
     addFilter(newFilter);
-    setColor('');
+    onApplyFilters(); // Notify parent component that filters have been applied
+  };
+
+  const handleClearFilters = () => {
+    setSelectedColors([]);
+    setSelectedMaterials([]);
+    setSelectedCategories([]);
     setPrice('');
-    setMaterial('');
-    setProduct('');
-    onApplyFilters(); // Call the callback to hide filters
+    clearFilters(); // Notify parent component that filters have been cleared
   };
 
   return (
     <div className={styles.filterContainer}>
       <div className={styles.filterSection}>
         <h4>Color</h4>
-        <select value={color} onChange={(e) => handleFilterChange(e, setColor)}>
-          <option value="">Select Color</option>
-          {uniqueValues('color').map(value => (
-            <option key={value} value={value}>{value}</option>
+        <div className={styles.checkboxGrid}>
+          {uniqueValues('colors').map(value => (
+            <label key={value} className={styles.checkboxLabel}>
+              <input
+                type="checkbox"
+                value={value}
+                checked={selectedColors.includes(value)}
+                onChange={(e) => handleCheckboxChange(e, setSelectedColors, selectedColors)}
+              />
+              {value}
+            </label>
           ))}
-        </select>
+        </div>
+      </div>
+      <div className={styles.filterSection}>
+        <h4>Material</h4>
+        <div className={styles.checkboxGrid}>
+          {uniqueValues('materials').map(value => (
+            <label key={value} className={styles.checkboxLabel}>
+              <input
+                type="checkbox"
+                value={value}
+                checked={selectedMaterials.includes(value)}
+                onChange={(e) => handleCheckboxChange(e, setSelectedMaterials, selectedMaterials)}
+              />
+              {value}
+            </label>
+          ))}
+        </div>
+      </div>
+      <div className={styles.filterSection}>
+        <h4>Category</h4>
+        <div className={styles.checkboxGrid}>
+          {uniqueValues('categories').map(value => (
+            <label key={value} className={styles.checkboxLabel}>
+              <input
+                type="checkbox"
+                value={value}
+                checked={selectedCategories.includes(value)}
+                onChange={(e) => handleCheckboxChange(e, setSelectedCategories, selectedCategories)}
+              />
+              {value}
+            </label>
+          ))}
+        </div>
       </div>
       <div className={styles.filterSection}>
         <h4>Price</h4>
@@ -50,25 +108,10 @@ function Filter({ products, addFilter, onApplyFilters }) {
           <option value="$200+">$200+</option>
         </select>
       </div>
-      <div className={styles.filterSection}>
-        <h4>Material</h4>
-        <select value={material} onChange={(e) => handleFilterChange(e, setMaterial)}>
-          <option value="">Select Material</option>
-          {uniqueValues('material').map(value => (
-            <option key={value} value={value}>{value}</option>
-          ))}
-        </select>
+      <div className={styles.filterButtons}>
+        <button className="btn btn-primary" onClick={handleAddFilter}>Apply Filters</button>
+        <button className="btn btn-secondary" onClick={handleClearFilters}>Clear Filters</button>
       </div>
-      <div className={styles.filterSection}>
-        <h4>Product</h4>
-        <select value={product} onChange={(e) => handleFilterChange(e, setProduct)}>
-          <option value="">Select Product</option>
-          {uniqueValues('product').map(value => (
-            <option key={value} value={value}>{value}</option>
-          ))}
-        </select>
-      </div>
-      <button className="btn btn-secondary" onClick={handleAddFilter}>Apply Filters</button>
     </div>
   );
 }

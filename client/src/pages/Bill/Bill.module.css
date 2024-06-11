@@ -1,0 +1,114 @@
+.billPage {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.billSection {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+
+.billItem {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.1rem;
+}
+
+.billItem p {
+    margin: 0;
+}
+
+.finalAmount p {
+    margin: 5px 0;
+}
+
+.finalAmount h2 {
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+button, .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #0056b3;
+}
+
+.applyButton {
+    margin-top: 10px;
+}
+
+.autoFillButton {
+    background-color: #28a745;
+}
+
+.autoFillButton:hover {
+    background-color: #218838;
+}
+
+.paymentButton {
+    background-color: #28a745;
+}
+
+.paymentButton:hover {
+    background-color: #218838;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

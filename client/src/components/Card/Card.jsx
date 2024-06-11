@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
 
-function Card({ id, imageUrl, title, description, price }) {
+function Card({ id, imageUrl, title, description, price, stocked }) {
   return (
     <div className={styles.card}>
+      {stocked && <div className={styles.outOfStockBanner}>Out of Stock</div>}
       <Link to={`/product/${id}`} className={styles.cardLink}>
         <div className={styles.cardImageContainer}>
           <img
