@@ -96,32 +96,47 @@ function Home() {
           </div>
         </header>
         <div className="container">
-          <div className="row">
-            <div className={`col-md-6 ${styles.carouselContainer}`}>
-              <div id="carouselExampleRide" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <div className="carousel-inner">
-                  <div className={`carousel-item ${activeSlideIndex === 0 ? 'active' : ''}`} data-slide-index="0">
-                    <img src="https://via.placeholder.com/800x400?text=First+Slide" className={`d-block w-100 ${styles.carouselImages}`} alt="First Slide" />
-                  </div>
-                  <div className={`carousel-item ${activeSlideIndex === 1 ? 'active' : ''}`} data-slide-index="1">
-                    <img src="https://via.placeholder.com/800x400?text=Second+Slide" className={`d-block w-100 ${styles.carouselImages}`} alt="Second Slide" />
-                  </div>
-                  <div className={`carousel-item ${activeSlideIndex === 2 ? 'active' : ''}`} data-slide-index="2">
-                    <img src="https://via.placeholder.com/800x400?text=Third+Slide" className={`d-block w-100 ${styles.carouselImages}`} alt="Third Slide" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={`col-md-6 d-flex ${styles.textContainer}`}>
-              <div>
-                <h2>{slideText}</h2>
-                <p>{insideText}</p>
-                <button className={styles.cardButton} onClick={handleClick}>Shop Now</button>
-              </div>
-            </div>
+  <div className="row">
+    <div className={`col-md-6 ${styles.carouselContainer}`}>
+      <div id="carouselExampleRide" className="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+        <div className="carousel-inner">
+          <div className={`carousel-item ${activeSlideIndex === 0 ? 'active' : ''}`} data-slide-index="0">
+            <img
+              src="https://imgs.search.brave.com/y1Vc2CofxDlp6H-mWJtOsMyFrQ-mxj_79aInUZUkO38/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDUzNDg1MzI3NjAt/Njc1M2QyYzQzMzI5/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRCOGZI/Tm9iMlY4Wlc1OE1I/eDhNSHg4ZkRBPQ.jpeg"
+              className={`d-block w-100 ${styles.carouselImages}`}
+              alt="First Slide"
+              style={{ width: '1000px', height: '300px' }}
+            />
+          </div>
+          <div className={`carousel-item ${activeSlideIndex === 1 ? 'active' : ''}`} data-slide-index="1">
+            <img
+              src="https://imgs.search.brave.com/nwRXvvVJs3N1F_M7VcZmDybh8ZCHKyy_-AgdxSSx_sE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDAxODUzNjU5MjYt/M2EyY2UzY2RiOWVi/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRGOGZI/Tm9iMlZ6ZkdWdWZE/QjhmREI4Zkh3dw"
+              className={`d-block w-100 ${styles.carouselImages}`}
+              alt="Second Slide"
+              style={{ width: '1000px', height: '300px' }}
+            />
+          </div>
+          <div className={`carousel-item ${activeSlideIndex === 2 ? 'active' : ''}`} data-slide-index="2">
+            <img
+              src="https://imgs.search.brave.com/HCmRwO-JZU6gcxTeAOEgbkD6lw2vhBukmEc1TLDYN5U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MDM4MDgwMzMxOTIt/MDgyZDY5MTlkM2Ux/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRsOGZI/Tm9iMlZ6ZkdWdWZE/QjhmREI4Zkh3dw"
+              className={`d-block w-100 ${styles.carouselImages}`}
+              alt="Third Slide"
+              style={{ width: '1000px', height: '300px' }}
+            />
           </div>
         </div>
       </div>
+    </div>
+    <div className={`col-md-6 d-flex ${styles.textContainer}`}>
+      <div>
+        <h2>{slideText}</h2>
+        <p>{insideText}</p>
+        <button className={styles.cardButton} onClick={handleClick}>Shop Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
       <header className={`py-5 mb-4 ${styles.header}`}>
         <div className="container text-center">

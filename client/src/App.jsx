@@ -4,7 +4,8 @@ import Navbar from './components/Navbar/Navbar';
 import './App.css';
 import Home from './pages/Home/Home';
 import Shop from './pages/Shop/Shop';
-import Login from './components/Login/Login';
+import Login from './pages/Login/Login';
+import Signup from './pages/Signup/Signup';
 import Footer from './components/Footer/Footer';
 import Product from './pages/Product/Product';
 import Contact from './pages/Contact/Contact';
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Admin" element={<Admin />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/home" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
